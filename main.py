@@ -1,3 +1,4 @@
+from map_functions import single_user_map, multi_user_map
 from mapbook.users import users
 from mapbook.crud import hello, read_users, add_user, remove_user, update_user
 
@@ -26,13 +27,14 @@ def main():
                update_user(users)
           if menu_option == '4':
                remove_user(users)
-               if menu_option == '5':
-                    pass
-               if menu_option == '6':
-                    pass
-
+          if menu_option == '5':
+               single_user_map(users)
+          if menu_option == '6':
+               multi_user_map(users)
+6
 if __name__ == '__main__':
      main()
+
 
 
 
